@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.3/tippy.min.css"
+        integrity="sha384-W5KZEtjnDRvZWFMWSKnH8Z2ypHzLBKk6dFZYEaVvJcPGhD3H8nAg63BCbxP+qG8P" crossorigin="anonymous" />
+    <title>KeyWord Computer Control With Voice GCZ7</title>
+    <link rel="shortcut icon" href="icons.ico" type="image/x-icon">
+</head>
+
+<body>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            /* overflow-x: hidden; */
+        }
+
+        p {
+            position: relative;
+            margin: 20px;
+        }
+
+        .thanhngang {
+            border-bottom: 2px solid black;
+            margin-top: 10px;
+        }
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .banner {
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 10px;
+            width: 550px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .banner h2 {
+            font-size: 23px;
+        }
+
+
+        .header {
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 15px;
+            position: relative;
+            top: -5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .note {
+            margin-top: -13px;
+            margin-left: 63px;
+        }
+
+        .module1,
+        .module2,
+        .module3,
+        .module4,
+        .module5,
+        .module6,
+        .module7,
+        .module8,
+        .module9,
+        .footer {
+            position: relative;
+            width: 100%;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .module1 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+        }
+
+        .module2 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 10px;
+        }
+
+        .module3 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 20px;
+        }
+
+        .module4 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 30px;
+        }
+
+        .module5 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 40px;
+        }
+
+        .module6 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 50px;
+        }
+
+        .module7 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 60px;
+        }
+
+        .dau {
+            flex: 1;
+            display: inline-block;
+            width: 100%;
+            column-count: 3;
+            column-gap: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            break-inside: avoid-column;
+        }
+
+        .module8 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 70px;
+        }
+
+        .module9 {
+            border: 2px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            top: 80px;
+        }
+
+        .module2h2,
+        .module3h2,
+        .module4h2,
+        .module5h2,
+        .module6h2,
+        .module7h2,
+        .module8h2,
+        .module9h2 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .footer {
+            border: 2px solid black;
+            border-radius: 30px;
+            width: 300px;
+            text-align: center;
+            top: 110px;
+            margin-bottom: 130px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .footer a {
+            color: black;
+            text-decoration: none
+        }
+
+        .clickbutton {
+            border: 2px solid black;
+            background-color: #f9f9f9;
+            max-width: 700px;
+            min-height: 60px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .clickbutton span {
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .b1,
+        .b2,
+        .b3,
+        .b4,
+        .b5,
+        .b6,
+        .b7,
+        .b8,
+        .b9,
+        .ft {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-left: 13px;
+            color: black;
+            background-color: #f9f9f9;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.2s ease-in-out;
+            margin-bottom: 10px;
+        }
+
+        .clickbutton .b1:hover,
+        .clickbutton .b2:hover,
+        .clickbutton .b3:hover,
+        .clickbutton .b4:hover,
+        .clickbutton .b5:hover,
+        .clickbutton .b6:hover,
+        .clickbutton .b7:hover,
+        .clickbutton .b8:hover,
+        .clickbutton .b9:hover,
+        .clickbutton .ft:hover {
+            transform: translateY(3px);
+        }
+
+        .b1,
+        .b2,
+        .b3,
+        .b4,
+        .b5,
+        .b6,
+        .b7,
+        .b8,
+        .b9,
+        .ft {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            position: relative;
+            left: -10px;
+        }
+
+        .click {
+            padding: 30px;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #363636;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 9999;
+        }
+
+        .scroll-to-top a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        .scroll-to-top a:hover {
+            color: #ddd;
+        }
+    </style>
+    <div class="container">
+        <div class="banner" id="banner">
+            <h2>KeyWord Computer Control With Voice GCZ7</h2>
+        </div>
+        <div class="header" id="header">
+            <p><b>Note I :</b> Phải để tiếng anh hoặc dùng lệnh "đổi kiểu ngôn ngữ" để đổi kiểu </p>
+            <p style="left:65px; top: -10px;">Ví dụ nếu bạn dùng UniKey thì phải để icon chữ E - tức là chế độ tiếng anh
+            </p>
+            <p><b>Note II :</b> Vui lòng để ý hình cái mic ở phía phải thanh taskbar : </p>
+            <p style="margin-left: 100px;top:-12px;">- Nếu có mic là đang nhận lệnh còn không hiện lên thì sẽ không nhận
+                lệnh
+            </p>
+            <p style="margin-left: 100px;top:-22px;">- Nếu đều không hiện lên thì có thể là mic hoặc mic của windows có
+                vấn
+                đề
+                vui lòng kiểm tra lại</p>
+            <p style=" top: -25px;">
+                <b>Note III : </b>Những lệnh có <b>"TD" - tự do</b>: Ra lệnh y hệt hoặc biến tấu đi đều được miễn trong
+                câu
+                lệnh
+                có các từ khoá </b>
+            <p style="top: -30px;margin-left: 99px;">Những lệnh có <b>"BB" - bắt buộc</b> : Ra lệnh y hệt từ hướng dẫn
+            </p>
+            </p>
+            <p style="top: -28px;"><b>Note IV: </b> Tốc độ nhận lệnh của công cụ phụ thuộc vào chất lượng âm thanh (ồn
+                ào, nhiều tạp âm,..) , chất lượng thu âm của microphone</p>
+        </div>
+
+        <div class="click">
+            <div class="clickbutton">
+                <span style="font-size: 20px;"><b> Nút ấn các phần lệnh bên dưới </b></span>
+                <div class="button-container">
+                    <div><a class="b1" title="Các lệnh dùng công cụ" href="#module1">I</a></div>
+                    <div><a class="b2" title="Mở website , application" href="#module2">II</a></div>
+                    <div><a class="b3" title="Xử lý video" href="#module3">III</a></div>
+                    <div><a class="b4" title="Âm lượng" href="#module4">IV</a></div>
+                    <div><a class="b5" title="Xử lý văn bản , phím tắt" href="#module5">V</a></div>
+                    <div><a class="b6" title="Điều khiển chuột" href="#module6">VI</a></div>
+                    <div><a class="b7" title="Dấu và số" href="#module7">VII</a></div>
+                    <div><a class="b8" title="Lệnh khác" href="#module8">VIII</a></div>
+                    <div><a class="b9" title="Lệnh kết hợp" href="#module9">IX</a></div>
+                    <div><a class="ft" title="Link hỗ trợ của Designer" href="#footer">FT</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-to-top">
+            <a href="#">
+                <span>&#9650;</span> <!-- Ký tự mũi tên lên trên -->
+            </a>
+        </div>
+
+
+        <div class="module1" id="module1">
+            <h2 style="text-align: center;">I : Các lệnh dùng công cụ đơn giản</h2>
+            <p><b> BB : lệnh điều khiển công cụ </b></p>
+            <p class="note">Note : Để mở file này lên trong trường hợp người dùng xoá file KeyWord kèm theo lúc tải từ
+                khoá
+                điều
+                khiển công cụ</p>
+            <p><b> BB : đóng công cụ điều khiển </b></p>
+            <p class="note">Note : Do tránh ra lệnh đóng nhầm cửa sổ bằng lệnh alt f4 vì vậy có câu lệnh này</p>
+            <p><b>BB : tạm nghỉ</b></p>
+            <p class="note">Note : Sau khi tạm nghỉ bot sẽ không nhận bất kỳ lệnh nào </p>
+            <p><b> BB : hey alex</b></p>
+            <p class="note">Note : Để gọi bot dậy sau khi đã cho nó "tạm nghỉ" , sau khi dậy bot sẽ hoạt động như bình
+                thường
+            </p>
+            <p><b> TD : giới thiệu </b></p>
+            <p class="note">Note : Lời tự thẩm của tác giả :v</p>
+            <p><b>TD : bạn có thể làm gì </b></p>
+            <p class="note">Note : Các lệnh bot có thể thực hiện</p>
+        </div>
+
+        <div class="module2" id="module2">
+            <div class="module2h2">
+                <h2>II : Mở website, application</h2>
+            </div>
+            <div class="thanhngang"></div>
+            <p><b> BB : bật google và tìm kiếm </b></p>
+            <p class="note"> Note : Sẽ được hỏi tìm kiếm gì</p>
+            <p><b> BB : bật trình duyệt </b></p>
+            <p class="note"> Note : Mở trình duyệt mặc định của máy</p>
+            <p><b> TD : mở </b></p>
+            <p class="note">Note : Mở trang web </p>
+            <p class="note">Example : mở facebook.com </p>
+            <p class="note">Cách đọc : mở phây búc chấm com</p>
+            <p><b> BB : bật ứng dụng </b></p>
+            <p class="note">Example : bật ứng dụng word</p>
+            <p class="note">Note: hiện tại mới chỉ hỗ trợ 4 ứng dụng word , excel , powerpoint , notepad hoặc đọc lệnh
+                kết
+                hợp
+                phía dưới để biết thêm </p>
+        </div>
+
+        <div class="module3" id="module3">
+            <div class="module3h2">
+                <h2>III : Xử lý video</h2>
+            </div>
+            <div class="thanhngang"></div>
+            <p><b> TD : xem youtube </b></p>
+            <p class="note">Example: Xem diu tút</p>
+            <p class="note"> Note : sẽ mở ra video nổi nhất với lệnh bạn nói</p>
+            <p><b>TD : dừng </b></p>
+            <p class="note">Example : dừng video</p>
+            <p class="note">Note : chỉ hỗ trợ các web video có cho sử dụng phím tắt để điều khiển video ( điển hình
+                youtube)
+            </p>
+            <p><b> TD : tiếp tục</b></p>
+            <p class="note">Example : tiếp tục video</p>
+            <p><b> BB : tắt tiếng video </b></p>
+            <p><b> BB : bật tiếng video</b></p>
+            <p><b> BB : phóng to cửa sổ video</b></p>
+            <p><b> BB : thu nhỏ cửa sổ video</b></p>
+        </div>
+
+        <div class="module4" id="module4">
+            <div class="module4h2">
+                <h2>IV : Âm Lượng</h2>
+            </div>
+            <div class="thanhngang"></div>
+            <p><b>TD - âm lượng giảm</b></p>
+            <p><b>TD - âm lượng tăng</b></p>
+            <p><b>TD - âm lượng tối đa</b></p>
+            <p><b>TD - âm lượng tắt tiếng</b></p>
+        </div>
+
+        <div class="module5" id="module5">
+            <div class="module5h2">
+                <h2>V : Xử lý văn bản , phím tắt</h2>
+            </div>
+            <div class="thanhngang"></div>
+            <p><b> TD : lưu </b><span style="margin-left: 200px;"> Note : Chẳng hạn lưu lại file .py sau khi đã sửa
+                    đổi</span>
+            </p>
+            <p><b> TD : en tơ </b><span style="margin-left: 185px;">Note : Phím enter</span></p>
+            <p><b> TD : xóa </b><span style="margin-left: 199px;"> Note : Xóa 1 kí tự</span></p>
+            <p><b> TD : sao chép </b><span style="margin-left: 152px;"> Note : bôi đen rồi sao chép</span></p>
+            <p><b> TD : dán </b><span style="margin-left: 198px;">Note : In ra cái vừa sao chép</span></p>
+            <p><b> TD : cắt </b><span style="margin-left: 203px;"> Note : Cắt cái bôi đen</span></p>
+            <p><b> TD : quay lại </b><span style="margin-left: 162px;"> Note : Quay lại hành động trước , vd quay lại từ
+                    đã
+                    xóa</span></p>
+            <p><b> TD : chọn tất cả</b><span style="margin-left: 140px;">Note : Bôi đen toàn bộ</span></p>
+            <p><b> TD : đọc văn bản </b><span style="margin-left: 125px;"> Note : Đọc phần văn bản bạn đã bôi đen</span>
+            </p>
+            <p><b> TD : thư mục </b><span style="margin-left: 158px;">Note : Mở File Explore</span></p>
+            <p><b> TD : quay về màn hình chính </b><span style="margin-left: 25px;">Note : Quay về màn hình
+                    desktop</span>
+            </p>
+            <p><b> TD : nhập văn bản </b><span style="margin-left: 113px;">Note : Chuyển giọng nói thành văn bản và in
+                    nó
+                    ra</span></p>
+        </div>
+
+        <div class="module6" id="module6">
+            <div class="module6h2">
+                <h2>VI : Điều khiển chuột</h2>
+            </div>
+            <div class="thanhngang"></div>
+            <p><b> BB : điều khiển chuột sang trái</b></p>
+            <p><b> BB : điều khiển chuột sang phải</b></p>
+            <p><b> BB : điều khển chuột giữa trên </b><span style="margin-left: 200px;"> Note : Di lên trên</span></p>
+            <p><b> BB : điều khiển chuột giữa dưới </b><span style="margin-left: 186px;"> Note : Di xuống dưới</span>
+            </p>
+            <p><b> BB : điều khiển chuột chọn trái </b><span style="margin-left: 195px;">Note : Click chuột trái</span>
+            </p>
+            <p><b> BB : điều khiển chuột chọn trái 2 lần </b><span style="margin-left: 147px;">Note : Click đúp</span>
+            </p>
+            <p><b> BB : điều khiển chuột chọn phải </b><span style="margin-left: 183px;"> Note : Click chuột phải</span>
+            </p>
+            <p><b> BB : điều khiển chuột trái dưới</b></p>
+            <p><b> BB : điều khiển chuột phải dưới</b></p>
+            <p><b> BB : điều khiển chuột trái trên</b></p>
+            <p><b> BB : điều khiển chuột phải trên</b></p>
+            <p><b> BB : điều khiển chuột lăn lên</b></p>
+            <p><b> BB : điều khiển chuột lăn xuống</b></p>
+            <p><b> BB : điều khiển chuột nhấn giữ</b></p>
+            <p><b> BB : điều khiển chuột bỏ </b><span style="margin-left: 240px;">Note : Bỏ nhấn giữ</span></p>
+        </div>
+
+        <div class="module7" id="module7">
+            <div class="module7h2">
+                <h2>VII : Dấu và số</h2>
+            </div>
+            <div class="thanhngang"></div>
+            <div class="dau">
+                <p><b> TD : dấu bằng ( = ) </b></p>
+                <p><b> TD : dấu lớn hơn ( > )</b></p>
+                <p><b> TD : dấu nhỏ hơn ( < )</b>
+                </p>
+                <p><b> TD : dấu hỏi chấm ( ? )</b></p>
+                <p><b> TD : dấu chấm than ( ! )</b></p>
+                <p><b> TD : dấu a còng ( @ )</b></p>
+                <p><b> TD : dấu thăng ( # )</b></p>
+                <p><b> TD : dấu phần trăm ( % )</b></p>
+                <p><b> TD : dấu ngoặc tròn trái ( ( )</b></p>
+                <p><b> TD : dấu ngoặc tròn phải ( ) )</b></p>
+                <p><b> TD : dấu hai chấm ( : )</b></p>
+                <p><b> TD : dấu phẩy ( , )</b></p>
+                <p><b> TD : dấu chấm ( . )</b></p>
+                <p><b> TD : dấu cách( )</b></p>
+                <p><b> TD : số một( 1 )</b></p>
+                <p><b> TD : số hai( 2 )</b></p>
+                <p><b> TD : số ba( 3 )</b></p>
+                <p><b> TD : số bốn( 4 )</b></p>
+                <p><b> TD : số năm( 5 )</b></p>
+                <p><b> TD : số sáu( 6 )</b></p>
+                <p><b> TD : số bảy( 7 )</b></p>
+                <p><b> TD : số tám( 8 )</b></p>
+                <p><b> TD : số chín( 9 )</b></p>
+                <p><b> TD : số không( 0 )</b></p>
+            </div>
+        </div>
+
+        <div class="module8" id="module8">
+            <div class="module8h2">
+                <h2>VIII :Lệnh khác</h2>
+            </div>
+            <div class="thanhngang"></div>
+            <p><b> TD : chụp màn hình</b></p>
+            <p class="note">Note : Chụp toàn màn hình và lưu ảnh ở thư mục ScreenShotGZC7 ở màn hình desktop</p>
+            <p><b> TD : đổi dạng ngôn ngữ </b></p>
+            <p class="note">Note : Chuyển đổi giữa dạng chữ V và E trong Unikey hoặc EVKey</p>
+            <p><b> TD : ngày , giờ</b></p>
+            <p><b> BB : cửa sổ tìm kiếm</b></p>
+            <p><b> BB : cửa sổ run</b></p>
+            <p><b> TD : thời tiết</b></p>
+            <p class="note">Example : thời tiết hôm nay như thế nào xong trả lời câu hỏi tiếp theo nó hỏi
+            </p>
+        </div>
+
+        <div class="module9" id="module9">
+            <div class="module9h2">
+                <h2>IX : Lệnh kết hợp</h2>
+            </div>
+            <div class="thanhngang"></div>
+            <p><b>1 : cửa sổ tìm kiếm ==> nhập văn bản </b></p>
+            <p class="note">Giúp bạn mở tất cả các ứng dụng của windows (chuyển sang tiếng anh tránh bị lỗi )</p>
+            <p><b>2 : mở trình duyệt ==> tìm kiếm trên trình duyệt ==> nhập văn bản</b></p>
+            <p class="note">Là câu lệnh kết hợp thủ công thay cho câu lệnh "mở google và tìm kiếm"</p>
+            <p><b>3 : điều khiển chuột nhấn giữ ==> điều khiển chuột trái dưới (hoặc bất kỳ hướng nào) ==> đọc văn bản
+                </b></p>
+            <p class="note">Note : để bôi đen 1 đoạn văn bản rồi đọc , sao chép hoặc di chuyển 1 cửa sổ </p>
+            <p><b>4 : Có thể kết hợp các lệnh khác tuỳ thuộc vào suy nghĩ người dùng</b></p>
+        </div>
+        <div class="footer" id="footer">
+            Designed By <a href="https://www.facebook.com/TienMinh294" target="_blank">TienMinh - TaQuan</a><br>
+            <span style="font-size: 17.5px;">Trường THPT Yên Khánh B</span><br>
+            <a style="text-decoration: none;" href="https://glucozo007.github.io" target="_blank"> _____GZC7_____ </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
